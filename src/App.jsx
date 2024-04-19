@@ -27,7 +27,7 @@ function App() {
       <div className="app">
 
         <h1 className="tituloMaior">
-          Lista de Tarefas
+          Lista de Tarefas Rápidas
         </h1>
 
         <FormTask addTask={addTask} />

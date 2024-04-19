@@ -1,29 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: darkred;
+  background-color: #8b0000;
   padding: 30px;
   color:black;
   background-size:auto;
   background-position: auto;
+  
   
 }
 
 .app {
   max-width: 600px;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: rgb(200, 200, 200);
   padding: 20px 30px;
-  border-radius: 10px;
+  border-radius: 10px 70px;
   transition-duration: 0.3s;
+  
   
 }
 
 .app:hover {
   max-width: 610px;
   margin: 0 auto;
-  background-color: lightgray;
-  padding: 21px 31px;
-  border-radius: 12px;
+  background-color: lightskyblue;
+  padding: 20.5px 30.5px;
+  border-radius: 70px 10px ;
  
 
 }
@@ -39,6 +44,23 @@ body {
   margin-top: 30px;
   
   
+}
+
+.tituloMaior {
+  font-size: 40px;
+  background-color: aliceblue;
+  border-radius: 60px 60px 20px 20px;
+  border-width: 1;
+  border-color: black;
+  border-style: double;
+  border-width: 5px;
+  padding: 5px;
+  transition: 0.2s;
+
+}
+
+.tituloMaior:hover {
+  padding: 6px;
 }
 
 .listaDeTarefas:hover {
@@ -62,7 +84,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: gray;
   transition: 0.4s;
   display: flex;
@@ -72,22 +94,13 @@ body {
 }
 
 .task {
-  
   align-items: center;
 }
 
-.botoesIsComp {
+
   
-  button{
-    margin-left: 10px;
-    padding: 7px;
-  }
-}
 
 .titleecate {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 30px;
 
   p {
@@ -98,16 +111,31 @@ body {
     border-color: black;
     border-width: 2;
   }
+
+  
 }
 
 
 
 h1 {
+  
   text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 h2 {
   margin-bottom: 10px ;
+  border-radius: 13px 13px 5px 5px;
+  text-align: center;
+  font-size: 34px;
+  background-color: rgba(255, 255, 255, 0.050) ;
+  transition: 0.2s;
+}
+h2:hover {
+  color:#200a01;
+  padding: 0.3px;
+  background-color: rgba(255, 255, 255, 0.100)
 }
 
 p {
