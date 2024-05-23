@@ -16,11 +16,27 @@ function App() {
       id: Math.floor(Math.random() * 10000),
       text: text,
       categoria: categoria,
-      isComplete: false
+      isCompleted: false
     }];
 
     setDados(newTasks);
+  };
+
+  const removerTask = (id) => {
+    const newTasks = [...dados];
+
+    const filtrodeTask = newTasks.filter((dados) => dados.id !== id ? dados : null);
+
+    setDados(filtrodeTask);
+
+  };
+
+  const completarTask = (id) => {
+    const newTasks = [...dados];
+    newTasks.map((dados) => dados.id === id ? (dados.isCompleted = !dados.isCompleted) : dados)
+    setDados(newTasks);
   }
+
 
   return (
     <>
@@ -35,7 +51,7 @@ function App() {
         <div className="listaDeTarefas">
           <div className='tarefa'>
             {dados.map((dado) => (
-              <Task key={dados.id} dado={dado} />
+              <Task key={dados.id} dado={dado} removerTask={removerTask} completarTask={completarTask}  />
             ))}
           </div>
         </div>

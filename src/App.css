@@ -3,7 +3,9 @@
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #8b0000;
+  background-image: url(./img/1325574.png);
+  background-position:center;
+  background-size: cover;
   padding: 30px;
   color:black;
   background-size:auto;
@@ -17,18 +19,20 @@ body {
   margin: 0 auto;
   background-color: rgb(200, 200, 200);
   padding: 20px 30px;
-  border-radius: 10px 70px;
-  transition-duration: 0.3s;
+  border-radius: 50px;
+  transition-duration: 0.4s;
   
   
 }
 
 .app:hover {
-  max-width: 610px;
+  max-width: 602px;
   margin: 0 auto;
-  background-color: lightskyblue;
+  background-color: rgb(200, 200, 200);
   padding: 20.5px 30.5px;
-  border-radius: 70px 10px ;
+  border-radius: 60px ;
+  border-color: black;
+  border-width: 1;
  
 
 }
@@ -42,6 +46,7 @@ body {
   max-width: 5000px;
   transition: 0.4s;
   margin-top: 30px;
+ 
   
   
 }
@@ -149,17 +154,18 @@ input {
 button {
   background-color: black;
   color: white;
-  padding: 5px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
+  margin: 10px;
 }
 
 button:hover {
   opacity: 1;
-  padding: 6px;
+  padding: 15.5px;
   border-radius: 3px;
   
 }
